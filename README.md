@@ -146,7 +146,7 @@ The pre-trained models can be generated locally. If you update your `data/` fold
 
 Ensure your terminal is in the root `cricpred` folder and run:
 ```bash
-python src/train.py
+python src/training.py
 ```
 
 This script will:
