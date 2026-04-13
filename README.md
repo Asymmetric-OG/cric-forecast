@@ -13,7 +13,7 @@
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Key Features & Dashboard UI](#-key-features--dashboard-ui)
 3. [The AI Architecture (PatchTST)](#-the-ai-architecture-patchtst)
@@ -25,14 +25,14 @@
     
 ---
 
-## 🏏 Project Overview
+## Project Overview
 Traditional fantasy cricket predictions rely on simple historical averages, which fail to capture the reality of a player's current form. This project completely reimagines player evaluation by treating cricket statistics as a complex **time-series problem**. 
 
 By utilizing three separate **PatchTST Transformer neural networks**, the AI analyzes sliding windows of a player's last 10 matches to forecast their specific batting, bowling, and fielding metrics for the upcoming game. It then processes these raw outputs through a standard T20 Fantasy Points algorithm to generate the ultimate predicted XI.
 
 ---
 
-## ✨ Key Features & Dashboard UI
+## Key Features & Dashboard UI
 
 The frontend is built on Streamlit with custom CSS theming, divided into two main analytical engines:
 
@@ -50,7 +50,7 @@ Deep-dive analytics for individual players based on their specific ID and histor
 
 ---
 
-## 🧠 The Deep Learning Architecture (PatchTST)
+## The Deep Learning Architecture (PatchTST)
 
 The predictive engine (`src/inference.py`) does not use one giant model; it uses three highly specialized pipelines:
 
@@ -63,7 +63,7 @@ When a match is predicted, the script identifies all 22 players. It retrieves th
 
 ---
 
-## 🧮 The Math: T20 Risk Profiling
+## The Math: T20 Risk Profiling
 
 Because T20 cricket is incredibly volatile, predicting a static point value isn't enough. The dashboard calculates the **Coefficient of Variation (CV)** for every player to determine their reliability.
 
@@ -77,7 +77,7 @@ To account for the "spiky" nature of T20 scoring (where a player might score 80 
 
 ---
 
-## 🛠️ Complete Tech Stack
+## Complete Tech Stack
 | Component | Technologies Used |
 | :--- | :--- |
 | **Frontend UI** | Streamlit, Plotly, HTML/CSS |
@@ -86,7 +86,7 @@ To account for the "spiky" nature of T20 scoring (where a player might score 80 
 
 ---
 
-## 🗺️ Repository Structure
+## Repository Structure
 
 ```text
 cricpred/
@@ -98,15 +98,15 @@ cricpred/
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Ignores large model weights and generated data
 │
-├── src/                    # 🧠 The Machine Learning Engine
+├── src/                    # The Machine Learning Engine
 │   └── inference.py        # Connects models to the dashboard, handles string-matching and Risk Math
 │
-├── data/                   # 🗄️ Generated data factory (Auto-generated, ignored by Git)
+├── data/                   # Generated data factory (Auto-generated, ignored by Git)
 │   ├── t20_master/         # Folder containing master historical databases
 │   ├── team_registry.json  # Maps team names to player IDs
 │   └── player_registry.json# Maps player IDs to human-readable names
 │
-└── models/                 # 🏋️ PyTorch state dictionaries (Auto-generated, ignored by Git)
+└── models/                 # PyTorch state dictionaries (Auto-generated, ignored by Git)
     ├── bat_model.pt
     ├── bowl_model.pt
     └── field_model.pt
@@ -115,7 +115,7 @@ cricpred/
 
 ---
 
-## 🚀 Installation & Execution
+## Installation & Execution
 
 **1. Clone the repository:**
 ```bash
@@ -140,7 +140,7 @@ streamlit run app.py
 
 ---
 
-## 🏋️ Training the Models
+## Training the Models
 
 The pre-trained models can be generated locally. If you update your `data/` folder with new recent matches and want the AI to learn from them, you can completely retrain the neural networks from scratch.
 
