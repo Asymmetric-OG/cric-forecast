@@ -14,14 +14,14 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](#-project-overview)
-2. [Key Features & Dashboard UI](#-key-features--dashboard-ui)
-3. [The DL Architecture (PatchTST)](#-the-dl-architecture-patchtst)
-4. [Risk Profiling](#-risk-profiling)
-5. [Complete Tech Stack](#-complete-tech-stack)
-6. [Repository Structure](#-repository-structure)
-7. [Installation & Execution](#-installation--execution)
-8. [Training the Models](#-training-the-models)
+1. [Project Overview](#project-overview)
+2. [Key Features & Dashboard UI](#key-features--dashboard-ui)
+3. [The DL Architecture (PatchTST)](#the-dl-architecture-patchtst)
+4. [Risk Profiling](#risk-profiling)
+5. [Complete Tech Stack](#complete-tech-stack)
+6. [Repository Structure](#repository-structure)
+7. [Installation & Execution](#installation--execution)
+8. [Training the Models](#training-the-models)
     
 ---
 
