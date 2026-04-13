@@ -16,8 +16,8 @@
 ## Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Key Features & Dashboard UI](#-key-features--dashboard-ui)
-3. [The AI Architecture (PatchTST)](#-the-ai-architecture-patchtst)
-4. [The Math: T20 Risk Profiling](#-the-math-t20-risk-profiling)
+3. [The DL Architecture (PatchTST)](#-the-dl-architecture-patchtst)
+4. [Risk Profiling](#-risk-profiling)
 5. [Complete Tech Stack](#-complete-tech-stack)
 6. [Repository Structure](#-repository-structure)
 7. [Installation & Execution](#-installation--execution)
@@ -63,7 +63,7 @@ When a match is predicted, the script identifies all 22 players. It retrieves th
 
 ---
 
-## The Math: T20 Risk Profiling
+## Risk Profiling
 
 Because T20 cricket is incredibly volatile, predicting a static point value isn't enough. The dashboard calculates the **Coefficient of Variation (CV)** for every player to determine their reliability.
 
