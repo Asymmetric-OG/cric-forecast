@@ -16,7 +16,7 @@
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Key Features & Dashboard UI](#key-features--dashboard-ui)
-3. [The DL Architecture (PatchTST)](#the-dl-architecture-patchtst)
+3. [The Deep Learning Architecture (PatchTST)](#the-dl-architecture-patchtst)
 4. [Risk Profiling](#risk-profiling)
 5. [Complete Tech Stack](#complete-tech-stack)
 6. [Repository Structure](#repository-structure)
